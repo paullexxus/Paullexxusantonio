@@ -1,3 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+    height: 300vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,10 +59,6 @@ nav ul li a:hover {
   height: 500px;
   border: 1px solid #000;
   box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url(progBG.jpeg);
 }
 
 .sub-content {
@@ -147,6 +152,7 @@ img {
   /* Add bottom padding */
   color: white;
   /* White text color */
+ padding-left: 30px;
 }
 
 .html {
@@ -234,72 +240,100 @@ h2 {
 }
 
 /* Devices Compatibility */
-@media (max-width: 480px) {
+@media (max-width: 991px){
+  #grid-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+  }
+  
+   #grid-container-1{
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-items: center;
+   }
+   
+   .skills {
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+   }
+   
+  .social-icons{
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-items: center;
+  }
+}
 
-
-  .content {
+@media (max-width: 450px){
+  content {
     display: flex;
     flex-direction: column;
     font-size: 12px;
   }
-
+  
   .button {
     margin-left: 100px;
   }
-
+  
   .sub-content {
     margin: 50px;
   }
-
+  
   .container {
     flex-direction: column;
   }
-
+  
   #grid-container {
     grid-template-columns: 1fr;
   }
-
-  #grid-container > div {
+  
+  #grid-container>div {
     padding: 40px 20px;
   }
-
+  
   img {
     height: 250px;
     width: 85%;
   }
   
   
-.html {
-  width: 70%;
-  background-color: #04aa6d;
-  justify-content: center;
-  /* Green */
-}
-
-.csharp {
-  width: 50%;
-  background-color: #2196f3;
-  /* Blue */
-}
-
-.java {
-  width: 15%;
-  background-color: #f44336;
-  /* Red */
-}
-
-.skill-bar{
-  width: auto;
-}
-
-  #grid-container-1{
+  .html {
+    width: 70%;
+    background-color: #04aa6d;
+    justify-content: center;
+    /* Green */
+  }
+  
+  .csharp {
+    width: 50%;
+    background-color: #2196f3;
+    /* Blue */
+  }
+  
+  .java {
+    width: 15%;
+    background-color: #f44336;
+    /* Red */
+  }
+  
+  .skill-bar {
+    width: auto;
+  }
+  
+  #grid-container-1 {
     font-size: 10px;
     display: flex;
     flex-direction: column;
   }
- 
-.social-icons{
-  display: flex;
-  flex-direction: column;
-}
-}
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+
